@@ -1,0 +1,48 @@
+
+<html>
+    <body>
+        <script>
+             window.oncontextmenu=function(){return false;} 
+ 
+    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+        window.event.returnValue = false; 
+        return false; 
+    } 
+
+    var h = window.innerHeight,w=window.innerWidth; 
+    window.onresize = function () { 
+        if (h!= window.innerHeight||w!=window.innerWidth){ 
+            window.close(); 
+            window.location = "about:blank"; 
+        } 
+    }
+var password = 123;
+var input;
+var entry_count = 0;
+var entry_limit = 1;
+var out_of_limit = false;
+
+while(password!=input && !out_of_limit){
+    entry_count++;
+    if(entry_count<=entry_limit){
+         input=prompt("請輸入密碼");
+}
+    else {
+        out_of_limit=true;
+    }
+}
+
+if(out_of_limit){
+    alert("密碼錯誤");
+}
+else{
+    window.open('https://www.youtube.com/')
+
+    
+    alert("https://app.gather.town/app/FF51Etiz3FCqqPki/TYT");
+    
+}
+</script>
+</body>
+
+</html>
